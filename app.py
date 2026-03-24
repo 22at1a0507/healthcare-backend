@@ -26,7 +26,9 @@ mongo = PyMongo(app)
 
 # --- CONFIGURATION ---
 FAST2SMS_API_KEY = os.getenv('FAST2SMS_API_KEY')
-
+@app.route('/')
+def home():
+    return "✅ Healthcare API is running successfully!"
 # --- 2. UTILITY FUNCTIONS ---
 def send_actual_sms(to_phone, message_body):
     """Utility function to trigger Fast2SMS alerts"""
