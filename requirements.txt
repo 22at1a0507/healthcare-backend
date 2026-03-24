@@ -1,0 +1,11 @@
+Flask
+flask-cors
+flask-pymongo
+bcrypt
+numpy
+tensorflow
+python-dotenv
+flask-apscheduler
+requests
+pymongo[srv]
+gunicorn
